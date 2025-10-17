@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CommandCloud</title>
+</head>
+<body>
+  <h2>Send Command to PC</h2>
+  <input type="text" id="command" placeholder="e.g. start chrome">
+  <button onclick="sendCommand()">Send</button>
+
+  <script>
+    async function sendCommand() {
+      const cmd = document.getElementById("command").value;
+      const res = await fetch("http://192.168.31.112:8000/send-command", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          device_id: "my-pc-001",
+          command_text: cmd
+        })
+      });
+      const data = await res.json();
+      alert("✅ " + data.message);
+    }
+  </script>
+</body>
+</html>
