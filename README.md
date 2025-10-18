@@ -5,41 +5,42 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Made with ❤️ by Sanskar Bhosle](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20Sanskar%20Bhosle-red)](#)
 
-```markdown
-# 🎙️ Veno OS — Your Voice-Controlled Remote Assistant
+---
 
-Veno is a voice-powered assistant that listens to your commands, speaks with emotion, and controls your PC remotely. It’s built to feel alive — poetic, responsive, and personal.
+**Veno** is a poetic, voice-controlled remote agent that listens, speaks, and executes system-level commands across devices.  
+Built with **FastAPI**, **edge-tts**, and **pygame**, Veno blends natural speech with remote automation — making your machine feel alive.
 
 ---
 
-## ✨ What Veno Can Do
+## 🧠 Features
 
-- 🎤 Listen to voice commands like: `cloud start chrome`
-- 🗣️ Speak back using natural voices (Indian, British, American, etc.)
-- 🌐 Send commands to other devices using a FastAPI server
-- 🖥️ Execute system-level actions remotely
-- 🎭 Respond with poetic, human-like feedback
-
----
-
-## 🛠️ Tech Used
-
-- `FastAPI` + `uvicorn` — for the server
-- `speechrecognition` — for voice input
-- `edge-tts` — for speech synthesis
-- `pygame` — for audio playback
-- `requests` — for sending commands
-- `subprocess` — for running system actions
+- 🎙️ **Voice Input** — Say `"cloud start chrome"` and Veno obeys  
+- 🗣️ **Natural Speech** — Uses `edge-tts` with randomized voices (Indian, British, American, etc.)  
+- 🎭 **Poetic Feedback** — Responds with human-like phrases and emotional tone  
+- 🌐 **FastAPI Server** — Routes commands to connected agents  
+- 🖥️ **Remote Agent** — Executes commands on target PC  
+- 🔁 **Real-Time Execution** — Voice → Server → Agent → Action  
 
 ---
 
-## 🚀 How to Run Veno
+## 🛠️ Tech Stack
 
-### 1. Install the required packages
+| Layer              | Tech Used                                      |
+|--------------------|------------------------------------------------|
+| Voice Input        | `speechrecognition`, `edge-tts`, `pygame`      |
+| Server             | `FastAPI`, `uvicorn`                           |
+| Agent              | `subprocess`, `requests`                       |
+| Playback           | `pygame.mixer`                                 |
+| OCR (coming soon)  | `pytesseract`, `pyautogui`                     |
 
+---
+
+## 🚀 How to Run
+
+### 1. Install Dependencies
 ```bash
 pip install fastapi uvicorn speechrecognition edge-tts pygame requests
-```
+
 
 ### 2. Start the FastAPI server
 
