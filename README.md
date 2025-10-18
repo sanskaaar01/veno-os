@@ -5,10 +5,6 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Made with ❤️ by Sanskar Bhosle](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20Sanskar%20Bhosle-red)](#)
 
----
-
-Absolutely, Sanskar — here’s a simplified, clean, and beginner-friendly version of your `README.md` that’s easy to read and copy-paste. It keeps the poetic vibe while making setup crystal clear:
-
 ```markdown
 # 🎙️ Veno OS — Your Voice-Controlled Remote Assistant
 
